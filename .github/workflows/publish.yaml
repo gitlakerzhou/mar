@@ -1,5 +1,7 @@
 name: publish
-on: [push]
+on:
+  release:
+    types:[published]
 jobs:
   push_to_registry:
     name: publish-mar-image

@@ -13,6 +13,6 @@ username: ${{ github.actor }}
 password: ${{ secrets.GITHUB_TOKEN }}
 - name: Build the mar Docker image
 run: |
-       docker build . --tag ghcr.io/lakerzhou/mar:latest
-       docker run ghcr.io/lakerzhou/mar:latest
-       docker push ghcr.io/lakerzhou/mar:latest
+       docker build . --tag ghcr.io/gitlakerzhou/mar:latest
+       docker run ghcr.io/gitlakerzhou/mar:latest
+       docker push ghcr.io/gitlakerzhou/mar:latest
